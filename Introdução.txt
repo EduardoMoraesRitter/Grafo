@@ -1,0 +1,21 @@
+/*
+São estruturas compostas por vértices e arestas criadas por matemáticos para estudar relações entre objetos.
+
+aplicação é leve
+desenhado trabalha com dados em memoria
+os dados ficam gigantes e a manutenção é mais dificil
+sistema pago, tem versao gratuita
+facebook usa o neo4J
+
+Mysql X Neo
+velocidade de consulta estilo inner join para consultar amigos
+
+2 - 0,016s X 0,010s
+3 - 30,267s x 0,168s
+4 - 1.54s x 1,359s
+5 -  +1h x 2,132s
+
+como melhorar o sistema de busca do gooogle, usando algoritimo da formiga, deixando feronomios no caminho e algoritimos das abelhas.
+criando usando analitycs do proprio google e criando um especie de like, quando o conteudo for realmente bom assim todo iriam esta logados no google para dar like, esse seria o feronomio, complementando a busca do google e nao somente pode ligaçoes entre sites.
+
+*/

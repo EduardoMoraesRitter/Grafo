@@ -1,0 +1,39 @@
+//--criar NODOS(vértices) com ARESTAS ao mesmo tempo
+create (:pessoa {nome:"cahr"})-[:tem]->(:Times {nome:"timao"})
+
+create (mn:Dinosauro {id: "MNHN 1995.20", size: "9"}),
+        (th:Species {id: "triceratos"}),
+        
+create (ca:fruta {nome:"maça"})-[:come]->(:Fruta{nome:"morango"})
+
+//novo geito, 
+//o "_1:" e "edu:" sao nome para conetar depois as arestas
+
+//craindo aresta dupla
+create 
+(_1:banda{ nome:"charly brow jr" }),
+(edu:pessoa{ nome:"Eduardo" }),
+(jo:pessoa{ nome:"Joana" }),
+(an:pessoa{ nome:"Andre" }),
+(jon:pessoa{ nome:"Jonh" }),
+edu-[:Curte]->_1,
+jo-[:Curte]->_1,
+an-[:Curte]->_1,
+jon-[:Curte]->_1,
+
+//merge
+MERGE (robert:Critic)
+RETURN robert, labels(robert)
+
+MERGE (charlie { name:'Charlie Sheen', age:10 })
+RETURN charlie
+   
+//criar unica aresta
+MATCH (root { name: 'root' })
+CREATE UNIQUE (root)-[:LOVES]-(someone)
+RETURN someone
+
+MATCH (lft { name: 'A' }),(rgt)
+WHERE rgt.name IN ['B', 'C']
+CREATE UNIQUE (lft)-[r:KNOWS]->(rgt)
+RETURN r
